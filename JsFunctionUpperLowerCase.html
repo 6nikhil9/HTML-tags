@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<script>
+
+function uppercaseConvert() 
+{
+	var str = document.getElementById("case").value;
+	var res = str.toUpperCase();
+	document.write("<b>Result: </b>"+res);
+}
+
+function lowercaseConvert() 
+{
+	var str = document.getElementById("case").value;
+	var res = str.toLowerCase();
+	document.write("<b>Result: </b>"+res);
+}
+
+
+</script>
+</head>
+<body>
+Enter Any Text:<input type="text" id="case" name="case"/><br/>
+<input type="button" value="Click Here for UpperCase" onclick="uppercaseConvert()"/>
+<input type="button" value="Click Here for LowerCase" onclick="lowercaseConvert()"/>
+</body>
+</html>

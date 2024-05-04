@@ -1,0 +1,77 @@
+<html>
+<head>
+<script type="text/javascript">  
+
+
+function add()        
+     {
+	 
+	    var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= a + b;
+	    document.write("<b>Addition: </b>"+c);
+     }
+	 
+	 function Subs()          
+     {
+        var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= a - b;
+	    document.write("<b>Substraction: </b>"+c); 
+     }
+	 
+	 function Multi()          
+     {
+        var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= a * b;
+	    document.write("<b>Multiplication: </b>"+c); 
+     }
+	 
+	 function Divi()          
+     {
+        var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= a / b;
+	    document.write("<b>Division: </b>"+c); 
+     }
+	 
+	 function Avge()          
+     {
+        var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= (a + b)/2;
+	    document.write("<b>Average: </b>"+c); 
+     }
+	 
+	 function Pers()          
+     {
+        var a,b,c;
+		a=Number(document.getElementById("numb").value);
+		b=Number(document.getElementById("numb1").value);
+		c= (b*100)/b;
+	    document.write("<b>Percentage: </b>"+c); 
+     }
+
+
+
+
+</script>  
+<form>  
+Enter First No:<input type="text" id="numb" name="numb"/><br/>  
+Enter Second No:<input type="text" id="numb1" name="numb1"/><br/> 
+
+ <input type="button" value="Add" onclick="add()"/> 
+ <input type="button" value="Subs" onclick="Subs()"/>  
+ <input type="button" value="Mult" onclick="Multi()"/> 
+ <input type="button" value="Div" onclick="Divi()"/>  
+ <input type="button" value="Avg" onclick="Avge()"/> 
+ <input type="button" value="Percent" onclick="Pers()"/> 
+
+</form>  
+</body>  
